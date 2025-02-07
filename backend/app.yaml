@@ -1,0 +1,32 @@
+runtime: custom
+env: flex
+service_account: original-mason-449514-a0@appspot.gserviceaccount.com
+# (Optional) Specify instance class and scaling settings
+instance_class: F2
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
+
+# Environment variables (set these here or via the Cloud Console)
+env_variables:
+  JWT_SECRET: "secret"
+  GCP_PROJECT_ID: "original-mason-449514-a0"
+  GCP_SERVICE_ACCOUNT_KEY: '{
+  "type": "service_account",
+  "project_id": "original-mason-449514-a0",
+  "private_key_id": "dbcb2b3a142bb5637c9dabe3c865566668ea8b16",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC6OqOYXoc823uT\n5n9NcuyQIXMKToDuq4YvUBZYsh0XlKgCRKqcWoGZ9qzFSgRZP47jBB/qjd3d1Jyn\nB3+QiHdCiMhyVnq4u4NL/bCvGNT0Thaq0X7QVm7tgViwoKEYUl3Hk1GuTObJVgVD\nBpip3E0gsRGi/60rlh+QjKfwfgROJ9LJCqXLkjE+SKGVNMizantUKWmIwf+VcJw6\nnIWoZqAAUS6Gwgp7GWtwrMhns38dUkE6QgO/yzXTZAAaAx6VeLYJnA9qwaxE0sXb\nafheWAQiGjEn92a1klE/lbbhDoOyULmvq+s8yapI5Xd/dkj6b2ehHXb46F1TlgJ1\npF5v48xBAgMBAAECggEACkMr+7wN0M05iKN1lXOFVMX7HHDKCxz5pobPzHB4SPHg\ntktJaZdVOAJPcAnNpotpmNoD1j2eIdjTDyNLJNBYXhrCjQZ1+dMff6MJxwRjy9i3\nyA8GYX253C26EPWxGvGDCHn2UNgdCbBLVu+4nvesamZHlgdn6BR8Rc9ye76+Bv5z\nvYs8WmvGpTTMu0UTBg1R8zChWopQnzFXdQQmN9dPA5F73DIZyUJF1vHwGTAvp4+O\n9rrhXDyQ7maRGT4qjyT21Ol6dJSS2Oaj+nkU2M7aLPrj+u3oCsn8dMmhamkLKixw\nrggOHsRwoc3MEN9E4WsT5R0WdpL72vgoeebVPqbV6QKBgQDfUoqSOrUxTxgzEO4X\nv1NTxxqPepDu4ggk08NspuAUen9RwFPyzrVjAP0a7WjP2AAaTIzLWU6xTLSKXL1x\ntbjt8GIm6o00w2knAKuRG31CzvcRewLSBblQHlF1rfH9XLeX6yLJMBWS+NE15TfX\nAF0Q0dZW4zq1o5dLtsUVmFdStQKBgQDVep0BMhTRFLDqIngTuOmujNb0xFFgjUZT\nJ4FKV6YHMJTDz5zFdQaQhPeob5p5+8NRVSPCMR2ORm225VaznxnFfA2LNmBij5cj\nFO+THHTS/Kc4WzKthKQ2oONpbH7WIpbWqtvYPF6BRKLirQpBlbOvlER/RXVXl1N+\n62/O2b2O3QKBgQDXLMbLwrlW+2jLu2JNi1GUhWE4IdaH9U33ffrsM5Xw5V7LvE6m\nwzjOXeOCEIJO0Ua4EE4QmMpT1x6VumnmqDu5N0a7TIAl+KrWo7Srqhr1RkmUlDvR\ndSZq5euDQcjKYI2dWTg5NZVz+T5LecJl7Lm/PRASw/qLjUZ383DOL+zjiQKBgE+D\nPdtmJe7CQCrU79iYtSE4gA/m11CZDiqGuldQUhy3cZGFUKUTM4C8penst6LbrSIs\nDgeUd6e4f8Dxptt8VQMDc5/4fun3BZohgCJRJQo45KfPAA81KlzWjB2GNa/YbkpC\nlWPzCFgpkmnPfdRzx9uL4/9rhYs8Z/MMCjcHTt1ZAoGAdns9n5WSqq4vFlunXq3S\nN997VgogkkIgAOUJuEXSJmDYbPjmrRcWREvPjf0mlp7UiHk8Gx7I6Ci/OMtLTNeQ\nrPNWL7qf4NOOu2pAcFcheArkmnf09l41OyZ+nIdFSb2Zd52MwiyjYhBcxh9fkktU\n36EKqR7Ph9f+V8Csyd5crGg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "original-mason-449514-a0@appspot.gserviceaccount.com",
+  "client_id": "117020142209687019283",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/original-mason-449514-a0%40appspot.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+  }'  # Use JSON string or set this securely
+ 
+ 
+  PGPORT: "5432"
+  PGUSER: "postgres"
+  PGPASSWORD: "admin"
+  PGDATABASE: "capsuledb"
